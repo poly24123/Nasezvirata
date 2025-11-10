@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="container">
     <a class="navbar-brand" href="index.html">Tečkovaný sen</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +21,13 @@
           <a class="nav-link active" aria-current="page" href="index.html">Domů</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="nase-zvirata.html">Naše zvířata</a>
+          <a class="nav-link" href="nasezvirata.html">Naše zvířata</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="stenata.html">Štěňata</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="oplemeni-pece.html">Oplemení & Péče</a>
+          <a class="nav-link" href="oplemeni-pece.html">O plemeni & Péče</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="kontakt-rezervace.html">Kontakt & Rezervace</a>
@@ -36,6 +36,26 @@
     </div>
   </div>
 </nav>
+
+
+
+<style>
+  .navbar .nav-link {
+  color: #555; /* základní barva textu */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #000; /* barva při hoveru */
+  text-shadow: 0 0 8px #000000, 0 0 16px #000000; /* modrá záře */
+}
+
+/* Volitelné: aktivní stránka může být zvýrazněná trvale */
+.navbar .nav-link.active {
+  color: #000000;
+  font-weight: 600;
+}
+</style>
 
 <section class="py-5 text-center" style="
   background-image: url('fleky.jpg'); 
@@ -151,9 +171,6 @@
   </div>
 </section>
 
-
-<footer class="text-center py-4 bg-dark text-light">
-  <p class="mb-0">
 
 
 <footer class="text-center py-4 bg-dark text-light">
